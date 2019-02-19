@@ -1,0 +1,14 @@
+/* For IE Browsers Only */
+
+/*  portfolio  */
+.portfolio-popup img, { cursor: url("images/icon-zoom.cur"), default;}
+figure:hover img { cursor: url("images/icon-zoom-white.cur"), pointer;}
+
+/*  magnific popup content   */
+.mfp-auto-cursor .mfp-content { cursor: url("images/icon-zoom-out.cur"), default;}
+
+/* navigation */
+nav .container { display: block;}
+.fix-nav { display: block; height: 57px;}
+
+
