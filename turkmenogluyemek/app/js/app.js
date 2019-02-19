@@ -4,7 +4,7 @@
 
 var app;
 if (!isMobile){
-    //$('#page').show()
+    $('#page').show()
 
 app = angular.module('mag', ['mag.directives']).
   config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
@@ -23,7 +23,7 @@ app = angular.module('mag', ['mag.directives']).
 }])
 }
 else{
-    //$('#mobile-page').show()
+    $('#mobile-page').show()
 
 app = angular.module('mag', ['mag.directives']).
   config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
