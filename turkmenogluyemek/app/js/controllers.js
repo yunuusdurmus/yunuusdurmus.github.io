@@ -4,16 +4,6 @@
 
 function HomeCtrl($scope, $http)
 {
-	var glryI = angular.element('#galry h3');
-
-	if (mailresult != 'bos') {
-		glryI.html(mailresult)
-		glryI.addClass('show');
-		window.setTimeout(function(){
-			glryI.fadeOut(500);
-		}, 5000);
-		mailresult = 'bos';
-	};
 }
 function bkCtrl($scope, $http)
 {
@@ -93,18 +83,6 @@ function MobileCommunicationCtrl($scope, $http)
 }
 function MobileHomeCtrl($scope, $http)
 {
-	var glryI = angular.element('#galry h3');
-
-	if (mailresult != 'bos') {
-		glryI.html(mailresult)
-		glryI.addClass('show');
-		window.setTimeout(function(){
-			glryI.fadeOut(500);
-		}, 5000);
-		mailresult = 'bos';
-	};
-	
-
 	var sliderIndex = 2,
 	elemen1 = angular.element('.centerContainer.home .containerContent ul.homeSlider > li'),
 	elemen2 = angular.element('.centerContainer.home .containerContent ul.homeFooter > li');

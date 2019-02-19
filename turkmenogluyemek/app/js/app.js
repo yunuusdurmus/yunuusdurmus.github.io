@@ -3,7 +3,9 @@
 /* App Module */
 
 var app;
-if (isMobile == 0){
+if (!isMobile){
+    $('#page').show()
+
 app = angular.module('mag', ['mag.directives']).
   config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider. 
@@ -20,7 +22,9 @@ app = angular.module('mag', ['mag.directives']).
       otherwise({redirectTo: '/'} );
 }])
 }
-if (isMobile == 1){
+else{
+    $('#mobile-page').show()
+
 app = angular.module('mag', ['mag.directives']).
   config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider. 
